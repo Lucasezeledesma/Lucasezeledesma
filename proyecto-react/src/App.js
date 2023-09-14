@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './App.css'; // Si usas estilos personalizados
+import './App.css'; 
 import NavBar from './components/NavBar';
 import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
-import Cart from './components/Cart'; // Importa el componente Cart
+import Cart from './components/Cart'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -26,7 +26,7 @@ function App() {
       <NavBar />
       <CartWidget cart={cart} />
       <ItemListContainer greeting="¡Bienvenido a nuestra tienda!" products={products} addToCart={addToCart} />
-      {cart.length > 0 && <Cart cartItems={cart} />} {/* Muestra el componente Cart si hay elementos en el carrito */}
+      {cart.length > 0 && <Cart cartItems={cart} />} {}
     </div>
   );
 }
